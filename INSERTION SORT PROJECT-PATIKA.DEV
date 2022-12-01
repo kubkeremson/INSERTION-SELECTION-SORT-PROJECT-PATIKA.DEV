@@ -1,0 +1,38 @@
+[22,27,16,2,18,6]
+
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+ÇÖZÜM
+En küçük eleman bulunduktan sonra dizinin en başına taşınırak baştaki sayı ile yer değiştirir. Bu işlem dizin boyunca sıralama bitene kadar tekrar eder.
+Bu dizinde en küçük eleman 2'dir. Dizi başındaki 22 sayısı ile replace edilir.
+STEP1: n aşaması ---------[2,27,16,22,18,6]
+STEP2: n-1 aşaması -------[2,6,16,22,18,27]
+STEP3: 16 elemanı sıralı olduğu için yer değişikliği yapmadık.
+STEP4: n-2 aşaması -------[2,6,16,18,22,27]
+STEP5: 22'yi kontrol ettiğimizde sıralanmış vaziyette olduğu için değişiklik yapmadık.
+STEP6: 27'yi kontrol ettiğimizde sıralanmış vaziyette olduğu için değişiklik yapmadık.
+
+Big-O gösterimini yazınız.
+
+[n(n+1)]/2 = (n^2+n)/2
+Big O Notation : O(n^2)
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+SONUÇ: Sıralı diziyi kontrol ettiğimizde 18 sayısı dizinin ortasında bulunmaktadır. Bu da bize Average Case kapsamına girdiğini gösterir.
+
+Average case: Aradığımız sayının ortada olması
+Worst case: Aradığımız sayının sonda olması
+Best case: Aradığımız sayının dizinin en başında olması.
+
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+ÇÖZÜM
+En küçük eleman 2'dir. Buna göre;
+STEP1: [2,3,5,8,7,9,4,15,6]
+STEP2: iKİNCİ EN ÜÇÜK SAYI OLAN 3 SIRALAMADA DOĞRU YERDE OLDUĞU İÇİN DEĞİŞİKLİK YAPILMAZ
+STEP3: [2,3,4,8,7,9,5,15,6]
+STEP4: [2,3,4,5,7,9,8,15,6]
+STEP5: [2,3,4,5,6,9,8,15,7]
+
+www.patika.dev 
